@@ -1,0 +1,200 @@
+<style>
+.plwf {
+
+font-size: 30px;
+color: rgba(15, 15, 15, 0.4)
+}
+.thegame {
+     margin: 0px;
+}
+.stage {
+	margin: 6px;
+}
+.stageset {
+	border: none;
+}
+.scoreboard  {
+		margin-top: 40px;
+		white-space: no-wrap;
+		overflow: hidden;
+		margin-left: 40px;
+}
+.scoreboard div {
+	display: inline-block;
+	width: 40%;
+	margin: 40px;
+	margin-right: 20px;
+	padding: 5px;
+	border: 1px solid #bebebe;
+	border-radius: 25px;
+	position: relative;
+	font-size: 60px;
+}
+.eact::after { width: 92%; content: ""; top: 77px; left: 12px; position: absolute; border-radius: 0px; border-bottom: 5px solid #009e87; }
+.lab_x, .lab_o {
+  
+  margin-left: 30px;
+}
+.sc_x , .sc_o {
+	float: right;
+	margin-right: 20px;
+}
+.row {
+	width: 80%;
+	marin: auto;
+}
+.tande {
+ 	width: fit-content;
+	margin: auto;
+	font-size: 30px;
+	margin-top: 40px;
+}
+.gamebody {
+	margin-top: 30px;
+	height: 700px;
+	width: 100%;
+	background: #009e87;
+	position:relative;
+}
+.eax { 
+ 	width: fit-content;
+	margin:auto;
+	padding-top: 100px;
+	padding-left: 50px;
+	}
+.row {
+  border-bottom: 14px solid #ccc;
+display: flex;
+}
+.eoa {
+	border-bottom: 0px solid;
+}
+.row div {
+	border-right: 14px solid #ccc;
+	margin: 0px;
+	width: 140px;
+	height: 120px;
+	font-size: 80px;
+	padding: 20px 0px 0px 40px;
+}
+.mex div {
+}
+.l {
+	 border: none !important;
+}
+.restartg {
+ width: 100%;
+margin: 20px 0px;
+	font-size: 45px;
+	color:#009e87;
+	border-bottom: 1px solid #bebebe;
+}
+.rg {
+  width:fit-content;
+margin: auto;
+padding-bottom:10px;
+
+
+}
+.x {
+  color: #6a5d5d;
+}
+.o{
+	color: white;
+	}
+.ghb {
+
+}
+.ow, .xw {
+	font-size: 450px;
+	text-align:center;
+}
+.ow {
+	color: white;
+}
+.xw {
+	color: #272727;
+}
+.win {
+	font-size: 58px;
+	text-align: center;
+}
+.playop {
+	border: 2px solid #bebebe;
+	width: 300px;
+	text-align: center;
+	margin-left: 8px;
+	color: #272727;
+}
+.pwf, .pwc {
+	border-bottom: 1px solid #bebebe;
+	padding: 10px;
+	font-size: 30px;
+}
+.playop {
+	display: none;
+}
+</style>
+<div class="thegame">
+<div class="stage">
+
+<div class="plwf"><b>Play With Friend</b></div>
+
+</div>
+
+<div class="playop">
+<div class="pwf">
+Play with Friend
+</div>
+
+<div class="pwc">
+Computer
+</div>
+</div>
+
+<div class="scoreboard">
+
+<div class="x_score eact"><span class="lab_x">X</span><span class="sc_x">-</span></div>
+<div class="o_score" style="color: black"><span class="lab_o" >O</span><span class="sc_o">-</span></div>
+</div>
+<div class="tande">Start Game</div>
+<div class="gamebody">
+<div class="eax">
+<div class="row eel">
+<div class="b" id="0"></div>
+<div class="b" id="1"></div>
+<div class="b l" id="2"></div>
+</div>
+<div class="row eel mex">
+<div class="b" id="3"></div>
+<div class="b" id="4"></div>
+<div class="b l" id="5"></div>
+</div>
+<div class="row eoa eel">
+<div class="b" id="6"></div>
+<div class="b" id="7"></div>
+<div class="b l" id="8"></div>
+</div>
+</div>
+</div>
+<div class="restartg">
+
+<div class="rg">Restart Game</div></div>
+
+
+
+
+</div>
+<script src="script.js">
+
+</script>
+<script>
+	var ee = document.getElementsByClassName("stage")[0];
+	ee.onclick = function(){
+		document.getElementsByClassName("playop")[0].style.display = "block"
+	}
+var c = document.getElementsByClassName("pwc")[0];
+c.onclick = function(){
+	
+}
+</script>
